@@ -1,0 +1,3 @@
+# React useEffect Hook Unexpected Behavior
+
+This repository demonstrates a common issue with the React `useEffect` hook where an empty dependency array leads to unexpected behavior. The intended behavior is for a side effect to run every time a relevant state variable updates, but due to the empty dependency array, the effect only runs once on mount. This results in a component that does not update as expected. The solution involves properly specifying dependencies in the dependency array.
